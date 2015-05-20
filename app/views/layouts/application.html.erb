@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>ProjectHero</title>
+  <title>Code4Newbies</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
-
 
   <!-- Compiled and minified CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.96.1/css/materialize.min.css">
@@ -13,7 +12,6 @@
   <!-- Compiled and minified JavaScript -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.96.1/js/materialize.min.js"></script>
           
-
 </head>
 <body>
 
@@ -35,14 +33,14 @@
   </nav>
 
   <div class="row">
-  	<div class="col md10 offset-m1">
-			<%= yield %>
-		</div>
-	</div>
+    <div class="col m10 offset-m1">
+      <%= yield %>    
+    </div>
+  </div>
 
-			<script>
-			 $(".button-collapse").sideNav();
-			</script>
+  <script>
+    $(".button-collapse").sideNav();
+  </script>
 
 </body>
 </html>
