@@ -1,10 +1,9 @@
 Rails.application.routes.draw do
-  resources :videos
   get 'pages/about'
 
   get 'pages/contact'
 
-  root 'videos#index'
+  root 'pages#about'
 
 
   # The priority is based upon order of creation: first created -> highest priority.
